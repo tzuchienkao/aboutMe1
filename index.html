@@ -5,23 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
-
+    <title>Tzuchien Kao Demo</title>
     <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/reset.min.css">
     <!-- 最新編譯和最佳化的 CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-
-	<!-- 選擇性佈景主題 -->
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-
-	<!-- 自定義樣式表 -->
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-	<!-- 最新編譯和最佳化的 JavaScript -->
-	<script src="js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- 自定義樣式表 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -30,26 +27,685 @@
     <![endif]-->
   </head>
   <body>
-  	<nav class="navbar navbar-fixed-bottom" role="navigation">
-  		<div class="container">
-  			<div class="navbar-header">
-  				<a class="navbar-brand" href="index.html">tzuchien Kao</a>
-  			</div>
-  			<div id="navbar" class="collapse navbar-collapse">
-	  			<ul class="nav navbar-nav">
-	  				<li><a href="#" class="active">自我介紹</a></li>
-	  				<li><a href="#">作品 - 網頁</a></li>
-	  				<li><a href="#">作品 - 平面</a></li>
-	  				<li><a href="#">作品 - 專案</a></li>
-	  			</ul>
-	  		</div>
-  		</div>
-  	</nav>
-  	<div class="container">
-  		<div class="page-header">
-  			<h1>tzuchien Demo</h1>
-  			<p><small>謙謙萬萬的作品集</small></p>
-  		</div>
-  	</div>
+    <div class="header navbar navbar-fixed-bottom">
+      <div class="page-header">
+        <a href="#indexPage" title="index">
+          <h1>Tzuchien Kao</h1>
+          <p>謙謙萬萬的作品集</p>
+        </a>
+      </div>
+      <ul class="menu nav navbar-nav" role="navigation">
+        <li><a href="#aboutMe" title="about me">關於 - 我</a></li>
+        <li><a href="#workWeb" title="work website">作品 - 網頁</a></li>
+        <li><a href="#workVisual" title="work visual">作品 - 平面</a></li>
+        <li><a href="#workProject" title="wprk project">作品 - 專案</a></li>
+      </ul>
+    </div>
+    <ul class="artical container">
+      <li id="indexPage">
+        <div class="index">
+          <img src="img/index.jpg" alt="indexPage">
+        </div>
+      </li>
+      <li id="aboutMe">
+        <dl class="col-xs-12">
+          <dt class="col-xs-3">
+            <a class="btn-block active" href="#about-01">關於 - 工作經歷</a>
+            <a class="btn-block" href="#about-02">關於 - 謙謙萬萬</a>
+          </dt>
+          <dd class="col-xs-9">
+            <ul id="web2015">
+              <li class="work-main" id="about-01">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-12"><p>2015／06～2017／01</p></dt>
+                  <dd class="col-xs-12">
+                    <p class="title">包山包海什麼都做／自創品牌『果然，果真自然』及『三貓甜妞』</p>
+                    <p>訂定所屬品牌視覺設計系統(VI)，應用系統小至名片、產品貼標，大至品牌招牌、旗幟、標識。<br>
+                    開發相關飲品及食品。<br>
+                    與企業接洽及合作餐車駐點、產品包套、家庭日、慈善義賣⋯⋯等相關活動。<br>
+                    即時應對顧客需求及問題回覆與處理。<br>
+                    經營『果然，果真自然』facebook粉絲專頁。
+                    </p>
+                  </dd>
+                  <dt class="col-xs-12"><p>2013／06～2015／05</p></dt>
+                  <dd class="col-xs-12">
+                    <p class="title">網頁美術設計／嚮網科技股份有限公司</p>
+                    <p>公司所屬各項內容、功能、服務相關網站之RWD網頁開發、設計及維護。<br>
+                    進行活動網站之視覺設計、活動BANNER、RWD網頁開發。<br>
+                    公司服務網站的商標設計。<br>
+                    設計及製作動靜態BANNER、EDM、網站平台形象影片。</p>
+                  </dd>
+                  <dt class="col-xs-12"><p>2012／03～2012／11</p></dt>
+                  <dd class="col-xs-12">
+                    <p class="title">視覺設計師／城邦原創</p>
+                    <p>設計製作平面電子書封及動靜態BANNER。<br>
+                    進行圖稿、文案的活動網頁設計。<br>
+                    參與HTML5網頁開發及公司網站改版。</p>
+                  </dd>
+                  <dt class="col-xs-12"><p>2010／04～2012／02</p></dt>
+                  <dd class="col-xs-12">
+                    <p class="title">美術設計／星炫股份有限公司</p>
+                    <p>設計網站版面的編排。<br>
+                    CIS設計與製作。<br>
+                    多媒體影音動畫設計與製作。<br>
+                    負責排版和輸出作業。<br>
+                    工作內容需與客戶及主管討論，並作必須的調整。</p>
+                  </dd>
+                  <dt class="col-xs-12"><p>2009／08～2010／02</p></dt>
+                  <dd class="col-xs-12">
+                    <p class="title">網頁設計師／北澎科技公司</p>
+                    <p>Flash動畫製作、EDM、平面操作說明、影音後製。</p>
+                  </dd>
+                </dl>
+              </li>
+              <li class="work-main" id="about-02">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-12"><p class="title">Tzuchien Kao</p></dt>
+                  <dd class="col-xs-12">
+                    <p></p>
+                  </dd>
+                </dl>
+              </li>
+          </dd>
+        </dl>
+      </li>
+      <li id="workWeb">
+        <dl class="col-xs-12">
+          <dt class="col-xs-3">
+            <a class="btn-block active" href="#web2015">網頁作品 - 2015</a>
+            <a class="btn-block" href="#web2014">網頁作品 - 2014</a>
+            <a class="btn-block" href="#web2013">網頁作品 - 2013年<small>之前</small></a>
+          </dt>
+          <dd class="col-xs-9">
+            <ul id="web2015">
+              <li class="work-main" id="web-01">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-6">
+                    <p class="title">客戶對象：<br>
+                    比特幣線上交易平台 - coolbitx</p>
+                    <p>執行內容：<br>
+                    前端開發，網站頁面切版，自適應設計(responsive design - RWD)，使用jquery開發操作頁面，各種裝置瀏覽器相容測試。 
+                    </p>
+                    <p>使用工具：<br>
+                    Sublime, Adobe Illustrator CS6</p>
+                    <p>使用語言：<br>
+                    html5, css2, css3, jquery
+                    </p>
+                  </dt>
+                  <dd class="col-xs-6">
+                    <img src="img/website/coolbitx_0_2015.jpg" alt="" sizes="100vw" width="100%">
+                  </dd>
+                </dl>
+                <div class="col-xs-12">
+                  <div class="col-xs-3">
+                    <img src="img/website/coolbitx_1_2015.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/website/coolbitx_2_2015.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/website/coolbitx_3_2015.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/website/coolbitx_4_2015.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                </div>
+              </li>
+              <li class="work-main" id="web-02">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-6">
+                    <p class="title">公司產品：<br>
+                    嚮網科技 - 愛逛街、優仕網、樂多日誌、flog</p>
+                    <p>執行內容：</p>
+                    <span>愛逛街 - 台灣站及馬來西亞站</span>
+                    <ol>
+                      <li>整合、規劃及維護html及css網頁規範，依照需求調整網站及優化SEO內容。</li>
+                      <li>網站改版，自適應設計(responsive design - RWD)及各種裝置瀏覽器相容測試。</li>
+                      <li>開發功能頁面 - o2o商家櫥窗前後台、搜尋列表頁面、活動頁面、功能區塊iframe。</li>
+                      <li>愛逛街網站推廣視覺影片。</li>
+                      <li>維護愛逛街其他平台之html及css。</li>
+                    </ol>
+                    <span>優仕網</span>
+                    <ol>
+                      <li>維護html及css，依照需求調整網頁內容。</li>
+                      <li>開發功能區塊 - 廣告區塊iframe。</li>
+                      <li>校園活動網頁 - 規劃及維護html及css網頁規範，自適應設計(responsive design - RWD)及各種裝置瀏覽器相容測試。</li>
+                      <li>活動廣告製作 - 浮水印全版廣告。</li>
+                    </ol>
+                    <span>樂多日誌</span>
+                    <ol>
+                      <li>日誌樣板版型設計，規劃版型css設計。</li>
+                      <li>活動頁面網頁視覺設計、切版及規劃html與css。</li>
+                    </ol>
+                    flog<br>
+                    標誌設計。
+                    <p>使用軟體：<br>
+                    Sublime, Adobe Illustrator CS6, Adobe Flash CS6, Adobe Photoshop CS6, SVN
+                    </p>
+                    <p>使用語言：<br>
+                    html, html5, css2, cs3, jquery, action script 2
+                    </p>
+                  </dt>
+                  <dd class="col-xs-6">
+                    <img src="img/website/yw/iguang_vedio.gif" alt="" sizes="100vw" width="100%">
+                    <img src="img/website/yw/iguang_event.jpg" alt="" sizes="100vw" width="100%">
+                    <img src="img/website/yw/yw_event.jpg" alt="" sizes="100vw" width="100%">
+                  </dd>
+                </dl>
+                <div class="col-xs-12">
+                  <div class="col-xs-3">
+                    <img src="img/website/yw/roodo_event.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/website/yw/k8_event.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/website/yw/iguang_newyear.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/website/yw/iguang_groupbuy.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                </div>
+              </div>
+              </li>
+            </ul>
+            <ul id="web2014">
+              <li class="work-main" id="web-03">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-6">
+                    <p class="title">公司產品：<br>
+                    城邦集團 - popo城邦原創</p>
+                    <p>執行內容：<br>
+                    每月之星 - 作家及書籍介紹，設計整體視覺及html網頁切版。<br>
+                    征文舞台 - 主題視覺設計及html網頁切版。<br>
+                    起點 - 參與網站大改版，html網頁切版及使用jquery開發。<br>
+                    電子書書封設計及banner - 依照企劃所選之風格設計電子書書封及banner、各廣告區塊banner resize。</p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS6, Adobe Photoshop CS6, Adobe Dreamweaver CS6
+                    </p>
+                    <p>使用語言：<br>
+                    html, css2, jquery
+                    </p>
+                  </dt>
+                  <dd class="col-xs-6">
+                    <img src="img/website/popo/140_postoreEP.jpg" alt="" sizes="100vw" width="100%">
+                  </dd>
+                </dl>
+                <div class="col-xs-12">
+                  <div class="col-xs-3">
+                    <img src="img/website/popo/template08_exlover.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/website/popo/143_2012maystar.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/website/popo/165_2012food.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/website/popo/155_2012AugFans.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                </div>
+                <div class="col-xs-12">
+                  <div class="col-xs-3">
+                    <img src="img/website/popo/169_2012DecStar.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/website/popo/163_2012OctStar.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/website/popo/166_2012guard.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/website/popo/152_2012AugStar.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                </div>
+              </li>
+              <li class="work-main" id="web-04">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-6">
+                    <p class="title">客戶對象：<br>
+                    維鯨資訊 - orcastras</p>
+                    <p>執行內容：<br>
+                    前端開發，網站頁面切版，使用bootstrap及jstree開發操作頁面，各種裝置瀏覽器相容測試。<br>
+                    jstree icon設計。 
+                    </p>
+                    <p>使用工具：<br>
+                    Adobe Dreamweaver CS5, Adobe Illustrator CS5</p>
+                    <p>使用語言：<br>
+                    html, css2, jquery
+                    </p>
+                  </dt>
+                  <dd class="col-xs-6">
+                    <img src="img/website/orcastras_0_2014.jpg" alt="" sizes="100vw" width="100%">
+                  </dd>
+                </dl>
+                <div class="col-xs-12">
+                  <div class="col-xs-6">
+                    <img src="img/website/orcastras_1_2014.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="img/website/orcastras_2_2014.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul id="web2013">
+              <li class="work-main" id="web-05">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-6">
+                    <p class="title">公司專案：<br>
+                    星炫科技股份有限公司 - WaffleWaffle! 果將鬆餅</p>
+                    <p>執行內容：<br>
+                    整體色彩依鬆餅與食物的概念採用橘色，採用局部產品圖引導瀏覽者的目光。
+                    </p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS3, Adobe Photoshop CS3, Adobe Dreamweaver CS3
+                    </p>
+                    <p>使用語言：<br>
+                    html, css2, jquery
+                    </p>
+                  </dt>
+                  <dd class="col-xs-6">
+                    <img src="img/website/flylink/waffle2_index.jpg" alt="" sizes="100vw" width="100%">
+                  </dd>
+                </dl>
+              </li>
+              <li class="work-main" id="web-06">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-6">
+                    <p class="title">公司專案：<br>
+                    星炫科技股份有限公司 - <a href="http://www.jiatong.com.tw/index.php" target="_blank">佳統科技光學股份有限公司</a></p>
+                    <p>執行內容：<br>
+                    鮮少使用黑色為企業官網，由黑色襯托出攝影的專業與質感，利用banner採用flash效果點綴，使整體感覺更為活潑。
+                    </p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS3, Adobe Photoshop CS3, Adobe Dreamweaver CS3, Flash 8
+                    </p>
+                    <p>使用語言：<br>
+                    html, css2, action script 2.0
+                    </p>
+                  </dt>
+                  <dd class="col-xs-6">
+                    <img src="img/website/flylink/jiatong_index.jpg" alt="" sizes="100vw" width="100%">
+                  </dd>
+                </dl>
+              </li>
+          </dd>
+        </dl>
+      </li>
+      <li id="workVisual">
+        <dl class="col-xs-12">
+          <dt class="col-xs-3">
+            <a class="btn-block active" href="#visual2016">平面作品 - 2016</a>
+            <a class="btn-block" href="#visual2015">平面作品 - 2015</a>
+            <a class="btn-block" href="#visual2014">平面作品 - 2014<small>之前</small></a>
+          </dt>
+          <dd class="col-xs-9">
+            <ul id="visual2016">
+              <li class="work-main" id="visual-01">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-6">
+                    <p class="title">客戶對象：<br>
+                    婚禮紀錄攝影師 - 花豆</p>
+                    <p>商標 - 設計理念：<br>
+                    以業主的中文名字「幸徽」為發想概念。<br>
+                    徽，為象徵之意義，<br>
+                    取『幸』之古字為圖，表示新人幸福之意的象徵。</p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS6
+                    </p>
+                  </dt>
+                  <dd class="col-xs-6">
+                    <img src="img/visual/shinphoto_logo_2016.jpg" alt="" sizes="100vw" width="100%">
+                  </dd>
+                </dl>
+                <div class="col-xs-12">
+                  <div class="col-xs-3">
+                    <img src="img/visual/shinphoto_logo_black_2016.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/visual/shinphoto_logo_white_2016.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/visual/shinphoto_logo_blackH_2016.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/visual/shinphoto_logo_whiteH_2016.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                </div>
+              </li>
+              <li class="work-main" id="visual-02">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-6">
+                    <p class="title">客戶對象：<br>
+                    中西式早餐店 - 紅金堡</p>
+                    <p>商標及名片 - 設計理念：<br>
+                    以「連字」及「簡化」的概念，<br>
+                    重新定義及設計商標。<br>
+                    將紅色落落大方的想像，<br>
+                    表現在新的商標身上。</p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS6
+                    </p>
+                  </dt>
+                  <dd class="col-xs-6">
+                    <img src="img/visual/breakfast_logo_2016.jpg" alt="" sizes="100vw" width="100%">
+                  </dd>
+                </dl>
+                <div class="col-xs-12">
+                  <div class="col-xs-6">
+                    <img src="img/visual/breakfast_namecard_front_2016.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="img/visual/breakfast_namecard_back_2016.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul id="visual2015">
+              <li class="work-main" id="visual-03">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-6">
+                    <p class="title">公司產品：<br>
+                    <a href="https://flog.tw/" target="_blank">臉書備份 your facebook log - flog</a></p>
+                    <p>商標 - 設計理念：<br>
+                    「雲端」一詞的崛起，<br>
+                    倚賴在網路的世界裡，<br>
+                    潛水在最深處無限的資料，<br>
+                    都能立即讓您輕鬆備份下來。</p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS6
+                    </p>
+                  </dt>
+                  <dd class="col-xs-6">
+                    <img src="img/visual/flog_logo_2015.jpg" alt="" sizes="100vw" width="100%">
+                  </dd>
+                </dl>
+                <div class="col-xs-12">
+                  <div class="col-xs-6">
+                    <img src="img/visual/flog_logo_color_2015.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="img/visual/flog_logo_bw_2015.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul id="visual2014">
+              <li class="work-main" id="visual-04">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-6">
+                    <p class="title">公司客戶：<br>
+                    自然科學實驗 - 張瑞</p>
+                    <p>自然筆記本 - 設計理念：<br>
+                    運用理科相關元素及重新設計看似無趣的表格，<br>
+                    加入筆記本當中，<br>
+                    讓您仍不乏味的繼續學習及使用。<br></p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS5, Adobe Indesign CS5
+                    </p>
+                  </dt>
+                  <dd class="col-xs-6">
+                    <img src="img/visual/book_0_2014.jpg" alt="" sizes="100vw" width="100%">
+                  </dd>
+                </dl>
+                <div class="col-xs-12">
+                  <div class="col-xs-3">
+                    <img src="img/visual/book_1_2014.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/visual/book_2_2014.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/visual/book_3_2014.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                  <div class="col-xs-3">
+                    <img src="img/visual/book_4_2014.jpg" alt="" sizes="100vw" width="100%">
+                  </div>
+                </div>
+              </li>
+              <li class="work-main" id="visual-05">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-6">
+                    <p class="title">公司客戶：<br>
+                    聯合利華</p>
+                    <p>電子報 - 設計理念：<br>
+                    運用理科相關元素及重新設計看似無趣的表格，<br>
+                    加入筆記本當中，<br>
+                    讓您仍不乏味的繼續學習及使用。<br></p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS5
+                    </p>
+                  </dt>
+                  <dd class="col-xs-6">
+                    <img src="img/visual/uni_EDM_2011.jpg" alt="" sizes="100vw" width="100%">
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </li>
+      <li id="workProject">
+        <dl class="col-xs-12">
+          <dt class="col-xs-3">
+            <a class="btn-block active" href="#project2016">專案作品 - 2016</a>
+            <a class="btn-block" href="#project2015">專案作品 - 2015<small>之前</small></a>
+          </dt>
+          <dd class="col-xs-9">
+            <ul id="project2016">
+              <li class="work-main" id="project-01">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-12">
+                    <ul>
+                      <li class="col-xs-12">
+                        <img src="img/project/surejuice_image_1.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                      <li class="col-xs-6">
+                        <img src="img/project/surejuice_car.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                      <li class="col-xs-3">
+                        <img src="img/project/surejuice_image.jpg" alt="" sizes="100vw" width="100%">
+                        <img src="img/project/surejuice_namecard.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                      <li class="col-xs-3">
+                        <img src="img/project/surejuice_product_0.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                    </ul>
+                  </dt>
+                  <dd class="col-xs-12">
+                    <p class="title">自有品牌：<br>
+                    現打果汁行動餐車 - 果然，果真自然</p>
+                    <p>執行理念：<br>
+                    因食安問題層出不窮，有什麼值得信賴的商品可以下肚？<br>
+                    選擇大自然孕育出來的水果為主要品項，不只是在意健康，也更在意吃得安全，吃得放心。
+                    </p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS6, Adobe Photoshop CS6
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li class="work-main" id="project-02">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-12">
+                    <ul>
+                      <li class="col-xs-12">
+                        <img src="img/project/miaokeeper_logo.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                      <li class="col-xs-4">
+                        <img src="img/project/miaokeeper_sign.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                      <li class="col-xs-8">
+                        <img src="img/project/miaokeeper_car.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                    </ul>
+                  </dt>
+                  <dd class="col-xs-12">
+                    <p class="title">自有品牌：<br>
+                    現烤鬆餅行動餐車 - 三貓甜妞</p>
+                    <p>執行理念：<br>
+                    由『果然，果真自然』而延伸出的副品牌，<br>
+                    再次強調“吃得安全，吃得放心”。<br>
+                    不改創立初衷，鬆餅不假他人之手，全程手工調製，堅持不添加化學添加物。
+                    </p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS6, Adobe Photoshop CS6
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+            <ul id="project2015">
+              <li class="work-main" id="project-03">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-12">
+                    <ul>
+                      <li class="col-xs-12">
+                        <img src="img/project/flylink/inyoung99_index.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                      <li class="col-xs-6">
+                        <img src="img/project/flylink/inyoung99_dm01.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                      <li class="col-xs-6">
+                        <img src="img/project/flylink/inyoung99_dm02.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                    </ul>
+                  </dt>
+                  <dd class="col-xs-12">
+                    <p class="title">公司專案：<br>
+                    星炫科技股份有限公司 - 台大-專業營養網</p>
+                    <p>執行內容：<br>
+                    網站：執行網站切版，並於進行中調整頁面流程及美化頁面。<br>
+                    平面：彈簧折之小卡DM設計，主要目的為快速傳達此網站使用之方便性及達到推廣之效果。
+                    </p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS3, Adobe Photoshop CS3, Adobe Dreamweaver CS3, Flash 8
+                    </p>
+                    <p>使用語言：<br>
+                    html, css2, action script 2.0
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li class="work-main" id="project-04">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-12">
+                    <ul>
+                      <li class="col-xs-12">
+                        <img src="img/project/flylink/luxsent_index.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                      <li class="col-xs-6">
+                        <img src="img/project/flylink/luxsent_cis01.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                      <li class="col-xs-6">
+                        <img src="img/project/flylink/luxsent_cis02.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                    </ul>
+                  </dt>
+                  <dd class="col-xs-12">
+                    <p class="title">公司專案：<br>
+                    星炫科技股份有限公司 - <a href="http://www.luxsent.com/" target="_blank">凌尚照明</a></p>
+                    <p>執行內容：<br>CIS：拉丁文中的SENTIO代表「感覺」，LUX則是「光」的意思。利用N的形狀，表達啟動光明之意，運用天空綠地節能環保之藍色及綠色。<br>網站：延續CIS「光的感覺」，強調現代科技與傳統燈泡之結合。
+                    </p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS3, Adobe Photoshop CS3, Adobe Dreamweaver CS3, Flash 8
+                    </p>
+                    <p>使用語言：<br>
+                    html, css2, action script 2.0
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li class="work-main" id="project-05">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-12">
+                    <ul>
+                      <li class="col-xs-12">
+                        <img src="img/project/flylink/esoft_index.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                      <li class="col-xs-6">
+                        <img src="img/project/flylink/esoft_NP12P.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                      <li class="col-xs-6">
+                        <img src="img/project/flylink/esoft_NP13P.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                    </ul>
+                  </dt>
+                  <dd class="col-xs-12">
+                    <p class="title">公司專案：<br>
+                    星炫科技股份有限公司 - <a href="http://www.e-softech.com/index.php" target="_blank">醫碩科技</a></p>
+                    <p>執行內容：<br>
+                    網站：考量後台可增設/修改之功能需求並符合企業寬廣、永續、環保之意念，進而設計及提供設計頁面以利程式開發。<br>
+                    平面：針對客戶之產品所附說明書及口罩包裝設計。
+                    </p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS3, Adobe Photoshop CS3, Adobe Dreamweaver CS3, Flash 8
+                    </p>
+                    <p>使用語言：<br>
+                    html, css2, action script 2.0, jquery
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li class="work-main" id="project-06">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-12">
+                    <ul>
+                      <li class="col-xs-9">
+                        <img src="img/project/flylink/instantc_index.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                      <li class="col-xs-3">
+                        <img src="img/project/flylink/instantc_dm.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                    </ul>
+                  </dt>
+                  <dd class="col-xs-12">
+                    <p class="title">公司專案：<br>
+                    星炫科技股份有限公司 - instantC.app 課表系統</p>
+                    <p>執行內容：<br>
+                    智慧型手機之應用程式，欲表達兩大作業系統皆可使用之設計概念，簡易明瞭且運用flash以達到虛擬體驗的說明網站。
+                    </p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS3, Adobe Photoshop CS3, Adobe Dreamweaver CS3, Flash 8
+                    </p>
+                    <p>使用語言：<br>
+                    html, css2, action script 2.0
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+              <li class="work-main" id="project-07">
+                <dl class="work col-xs-12">
+                  <dt class="col-xs-12">
+                    <ul>
+                      <li class="col-xs-9">
+                        <img src="img/project/flylink/kronho_index.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                      <li class="col-xs-3">
+                        <img src="img/project/flylink/kronho_poster.jpg" alt="" sizes="100vw" width="100%">
+                      </li>
+                    </ul>
+                  </dt>
+                  <dd class="col-xs-12">
+                    <p class="title">公司專案：<br>
+                    星炫科技股份有限公司 - 筐合企業有限公司</p>
+                    <p>執行內容：<br>
+                    以簡潔大方的顏色及版面搭配突顯產品的獨特性。
+                    </p>
+                    <p>使用軟體：<br>
+                    Adobe Illustrator CS3, Adobe Photoshop CS3, Adobe Dreamweaver CS3
+                    </p>
+                    <p>使用語言：<br>
+                    html, css2
+                    </p>
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+          </dd>
+        </dl>
+      </li>
+    </ul>
   </body>
 </html>
