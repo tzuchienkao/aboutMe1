@@ -30,7 +30,7 @@
 
   </head>
   <body>
-    <div class="header navbar navbar-fixed-bottom">
+    <div class="header navbar navbar-fixed-bottom main">
       <div class="page-header">
         <a href="#indexPage" title="index">
           <h1>Tzuchien Kao</h1>
@@ -38,10 +38,10 @@
         </a>
       </div>
       <ul class="menu nav navbar-nav" role="navigation">
-        <li><a href="#aboutMe" title="about me"><span class="glyphicon glyphicon-hand-right">&nbsp;</span>關於我</a></li>
-        <li><a href="#workWeb" title="work website">網頁</a></li>
-        <li><a href="#workVisual" title="work visual">平面</a></li>
-        <li><a href="#workProject" title="wprk project">專案</a></li>
+        <li><a class="open_li" href="javascript:void(0);" title="about me" open_li="aboutMe"><span class="glyphicon glyphicon-hand-right">&nbsp;</span>關於我</a></li>
+        <li><a class="open_li" href="javascript:void(0);" title="work website" open_li="workWeb">網頁</a></li>
+        <li><a class="open_li" href="javascript:void(0);" title="work visual" open_li="workVisual">平面</a></li>
+        <li><a class="open_li" href="javascript:void(0);" title="wprk project" open_li="workProject">專案</a></li>
         <li><a href="mailto:oyan114@hotmail.com" title="mailto me">聯絡我</a></li>
       </ul>
     </div>
@@ -50,7 +50,7 @@
         <div class="index">
         </div>
       </li>
-      <li id="aboutMe">
+      <li class="artical_li" id="aboutMe" style="display: none;">
         <dl class="col-xs-12">
           <dt class="col-xs-3">
             <a class="btn-block active" href="#about-01">關於 - 謙謙萬萬</a>
@@ -139,7 +139,7 @@
           </dd>
         </dl>
       </li>
-      <li id="workWeb">
+      <li class="artical_li" id="workWeb" style="display: none;">
         <dl class="col-xs-12">
           <dt class="col-xs-3">
             <a class="btn-block active" href="#web2015">網頁作品 - 2015</a>
@@ -363,7 +363,7 @@
           </dd>
         </dl>
       </li>
-      <li id="workVisual" style="display: none;">
+      <li class="artical_li" id="workVisual" style="display: none;">
         <dl class="col-xs-12">
           <dt class="col-xs-3">
             <a class="btn-block active" href="#visual2016">平面作品 - 2016</a>
@@ -516,7 +516,7 @@
           </dd>
         </dl>
       </li>
-      <li id="workProject" style="display: none;">
+      <li class="artical_li" id="workProject" style="display: none;">
         <dl class="col-xs-12">
           <dt class="col-xs-3">
             <a class="btn-block active" href="#project2016">專案作品 - 2016</a>
@@ -738,7 +738,15 @@
       </li>
     </ul>
     <script type="text/javascript">
-          $(function() {
+
+      $(function() {
+          $(".open_li").bind('click',function(){
+
+              $open_li = $(this).attr('open_li');
+              $(".artical_li").hide();
+              $("#"+$open_li).show();
+              $(document).scrollTop($('#indexPage').height());
+          })
           $("img.lazy").lazyload({effect : "fadeIn",effectspeed: 200 });
       });
     </script>
