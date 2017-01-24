@@ -20,6 +20,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,7 +31,7 @@
 
   </head>
   <body>
-    <div class="header navbar navbar-fixed-bottom main">
+    <div class="header navbar navbar-fixed-bottom">
       <div class="page-header">
         <a href="#indexPage" title="index">
           <h1>Tzuchien Kao</h1>
@@ -52,14 +53,14 @@
       </li>
       <li class="artical_li" id="aboutMe" style="display: none;">
         <dl class="col-xs-12">
-          <dt class="col-xs-3">
-            <a class="btn-block active" href="#about-01">關於 - 謙謙萬萬</a>
-            <a class="btn-block" href="#about-02">關於 - 工作經歷</a>
+          <dt class="col-xs-3 btnGroup">
+            <a class="btn-block active" href="javascript:void(0);" btn_link="about01">關於 - 謙謙萬萬</a>
+            <a class="btn-block" href="javascript:void(0);" btn_link="about02">關於 - 工作經歷</a>
           </dt>
-          <dd class="col-xs-9">
+          <dd class="col-xs-9 content">
             <ul id="about2017">
-              <li class="work-main" id="about-01">
-                <dl class="work col-xs-12">
+              <li class="work work-main" id="about01">
+                <dl class="col-xs-12">
                   <dt class="col-xs-12"><p class="title">Tzuchien Kao</p></dt>
                   <dd class="col-xs-12">
                     <p>女。畢業於國立虎尾科技大學，多媒體設計系。<br>
@@ -93,8 +94,8 @@
                     </dd>
                 </dl>
               </li>
-              <li class="work-main" id="about-02">
-                <dl class="work col-xs-12">
+              <li class="work work-main" id="about02" style="display: none;">
+                <dl class="col-xs-12">
                   <dt class="col-xs-12"><p>2015／06～2017／01</p></dt>
                   <dd class="col-xs-12">
                     <p class="title">包山包海什麼都做／自創品牌『果然，果真自然』及『三貓甜妞』</p>
@@ -141,15 +142,15 @@
       </li>
       <li class="artical_li" id="workWeb" style="display: none;">
         <dl class="col-xs-12">
-          <dt class="col-xs-3">
-            <a class="btn-block active" href="#web2015">網頁作品 - 2015</a>
-            <a class="btn-block" href="#web2014">網頁作品 - 2014</a>
-            <a class="btn-block" href="#web2013">網頁作品 - 2013年<small>之前</small></a>
+          <dt class="col-xs-3 btnGroup">
+            <a class="btn-block active" href="javascript:void(0);" btn_link="web2015">網頁作品 - 2015</a>
+            <a class="btn-block" href="javascript:void(0);" btn_link="web2014">網頁作品 - 2014</a>
+            <a class="btn-block" href="javascript:void(0);" btn_link="web2013">網頁作品 - 2013年<small>之前</small></a>
           </dt>
-          <dd class="col-xs-9">
-            <ul id="web2015">
+          <dd class="col-xs-9 content">
+            <ul class="work" id="web2015">
               <li class="work-main" id="web-01">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-6">
                     <p class="title">客戶對象：<br>
                     比特幣線上交易平台 - coolbitx</p>
@@ -168,7 +169,7 @@
                 </dl>
                 <div class="col-xs-12">
                   <div class="col-xs-3">
-                    <img data-original="img/website/coolbitx_1_2015.jpg" alt="" sizes="100vw" width="100%">
+                    <img class="lazy" data-original="img/website/coolbitx_1_2015.jpg" alt="" sizes="100vw" width="100%">
                   </div>
                   <div class="col-xs-3">
                     <img class="lazy" data-original="img/website/coolbitx_2_2015.jpg" alt="" sizes="100vw" width="100%">
@@ -182,7 +183,7 @@
                 </div>
               </li>
               <li class="work-main" id="web-02">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-6">
                     <p class="title">公司產品：<br>
                     嚮網科技 - 愛逛街、優仕網、樂多日誌、flog</p>
@@ -239,9 +240,9 @@
               </div>
               </li>
             </ul>
-            <ul id="web2014">
+            <ul class="work" id="web2014" style="display: none;">
               <li class="work-main" id="web-03">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-6">
                     <p class="title">公司產品：<br>
                     城邦集團 - popo城邦原創</p>
@@ -291,7 +292,7 @@
                 </div>
               </li>
               <li class="work-main" id="web-04">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-6">
                     <p class="title">客戶對象：<br>
                     維鯨資訊 - orcastras</p>
@@ -319,9 +320,9 @@
                 </div>
               </li>
             </ul>
-            <ul id="web2013">
+            <ul class="work" id="web2013" style="display: none;">
               <li class="work-main" id="web-05">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-6">
                     <p class="title">公司專案：<br>
                     星炫科技股份有限公司 - WaffleWaffle! 果將鬆餅</p>
@@ -341,7 +342,7 @@
                 </dl>
               </li>
               <li class="work-main" id="web-06">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-6">
                     <p class="title">公司專案：<br>
                     星炫科技股份有限公司 - <a href="http://www.jiatong.com.tw/index.php" target="_blank">佳統科技光學股份有限公司</a></p>
@@ -365,15 +366,15 @@
       </li>
       <li class="artical_li" id="workVisual" style="display: none;">
         <dl class="col-xs-12">
-          <dt class="col-xs-3">
-            <a class="btn-block active" href="#visual2016">平面作品 - 2016</a>
-            <a class="btn-block" href="#visual2015">平面作品 - 2015</a>
-            <a class="btn-block" href="#visual2014">平面作品 - 2014<small>之前</small></a>
+          <dt class="col-xs-3 btnGroup">
+            <a class="btn-block active" href="javascript:void(0);" btn_link="visual2016">平面作品 - 2016</a>
+            <a class="btn-block" href="javascript:void(0);" btn_link="visual2015">平面作品 - 2015</a>
+            <a class="btn-block" href="javascript:void(0);" btn_link="visual2014">平面作品 - 2014<small>之前</small></a>
           </dt>
-          <dd class="col-xs-9">
-            <ul id="visual2016">
+          <dd class="col-xs-9 content">
+            <ul class="work" id="visual2016">
               <li class="work-main" id="visual-01">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-6">
                     <p class="title">客戶對象：<br>
                     婚禮紀錄攝影師 - 花豆</p>
@@ -405,7 +406,7 @@
                 </div>
               </li>
               <li class="work-main" id="visual-02">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-6">
                     <p class="title">客戶對象：<br>
                     中西式早餐店 - 紅金堡</p>
@@ -432,9 +433,9 @@
                 </div>
               </li>
             </ul>
-            <ul id="visual2015">
+            <ul class="work" id="visual2015" style="display: none;">
               <li class="work-main" id="visual-03">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-6">
                     <p class="title">公司產品：<br>
                     <a href="https://flog.tw/" target="_blank">臉書備份 your facebook log - flog</a></p>
@@ -461,9 +462,9 @@
                 </div>
               </li>
             </ul>
-            <ul id="visual2014">
+            <ul class="work" id="visual2014" style="display: none;">
               <li class="work-main" id="visual-04">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-6">
                     <p class="title">公司客戶：<br>
                     自然科學實驗 - 張瑞</p>
@@ -495,7 +496,7 @@
                 </div>
               </li>
               <li class="work-main" id="visual-05">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-6">
                     <p class="title">公司客戶：<br>
                     聯合利華</p>
@@ -518,14 +519,14 @@
       </li>
       <li class="artical_li" id="workProject" style="display: none;">
         <dl class="col-xs-12">
-          <dt class="col-xs-3">
-            <a class="btn-block active" href="#project2016">專案作品 - 2016</a>
-            <a class="btn-block" href="#project2015">專案作品 - 2015<small>之前</small></a>
+          <dt class="col-xs-3 btnGroup">
+            <a class="btn-block active" href="javascript:void(0);" btn_link="project2016">專案作品 - 2016</a>
+            <a class="btn-block" href="javascript:void(0);" btn_link="project2015">專案作品 - 2015<small>之前</small></a>
           </dt>
-          <dd class="col-xs-9">
-            <ul id="project2016">
+          <dd class="col-xs-9 content">
+            <ul class="work" id="project2016">
               <li class="work-main" id="project-01">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-12">
                     <ul>
                       <li class="col-xs-12">
@@ -557,7 +558,7 @@
                 </dl>
               </li>
               <li class="work-main" id="project-02">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-12">
                     <ul>
                       <li class="col-xs-12">
@@ -586,9 +587,9 @@
                 </dl>
               </li>
             </ul>
-            <ul id="project2015">
+            <ul class="work" id="project2015" style="display: none;">
               <li class="work-main" id="project-03">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-12">
                     <ul>
                       <li class="col-xs-12">
@@ -619,7 +620,7 @@
                 </dl>
               </li>
               <li class="work-main" id="project-04">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-12">
                     <ul>
                       <li class="col-xs-12">
@@ -648,7 +649,7 @@
                 </dl>
               </li>
               <li class="work-main" id="project-05">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-12">
                     <ul>
                       <li class="col-xs-12">
@@ -679,7 +680,7 @@
                 </dl>
               </li>
               <li class="work-main" id="project-06">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-12">
                     <ul>
                       <li class="col-xs-9">
@@ -706,7 +707,7 @@
                 </dl>
               </li>
               <li class="work-main" id="project-07">
-                <dl class="work col-xs-12">
+                <dl class="col-xs-12">
                   <dt class="col-xs-12">
                     <ul>
                       <li class="col-xs-9">
@@ -737,18 +738,5 @@
         </dl>
       </li>
     </ul>
-    <script type="text/javascript">
-
-      $(function() {
-          $(".open_li").bind('click',function(){
-
-              $open_li = $(this).attr('open_li');
-              $(".artical_li").hide();
-              $("#"+$open_li).show();
-              $(document).scrollTop($('#indexPage').height());
-          })
-          $("img.lazy").lazyload({effect : "fadeIn",effectspeed: 200 });
-      });
-    </script>
   </body>
 </html>
