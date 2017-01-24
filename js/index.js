@@ -1,6 +1,9 @@
 $(function() {
 
       $(".open_li").bind('click',function(){
+        
+        $(".open_li").removeClass('active');
+        $(this).addClass('active');
         $open_li = $(this).attr('open_li');
         $(".artical_li").hide();
         $("#"+$open_li).show();
