@@ -34,6 +34,7 @@ a, a:hover, .page-header a:hover {color: #fff;}
 }
 @media only screen and (max-width: 360px) {
 	.page-header a {text-shadow: 0 2px 5px #333;}
-	.menu {font-size: 0.8em;}
+	.menu, .btn-block {font-size: 0.8em;}
+	.btn-block {padding:0.5em;}
 
 }
