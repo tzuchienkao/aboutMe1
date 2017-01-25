@@ -47,7 +47,7 @@ $(function() {
   //       $('.btn-block').hide();
   //     }
   // });
-  $(document).on("scrollstop",function(){
+  $(document).on("scrollstart",function(){
     $('.header').addClass('main');
       $('.page-header').hide();
       $('.btn-block').show();
