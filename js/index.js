@@ -47,7 +47,8 @@ $(function() {
   //       $('.btn-block').hide();
   //     }
   // });
-  $(document).on("swipe",function(){
+  $(document).on("touchmove",function(){
+    console.log('touchmove');
     $('.header').addClass('main');
       $('.page-header').hide();
       $('.btn-block').show();
