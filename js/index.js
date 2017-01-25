@@ -47,17 +47,8 @@ $(function() {
   //       $('.btn-block').hide();
   //     }
   // });
-  $(document).on("scrollstart", function(){
-      alert('123');
-      // $('.header').addClass('main');
-      // $('.page-header').hide();
-      // $('.btn-block').show();
-      // var liH = $('#indexPage').height() / 25;
-      // if($(document).scrollTop() <= liH){
-      //   $('.header').removeClass('main');
-      //   $('.page-header').show();
-      //   $('.btn-block').hide();
-      // }
+  $(document).on("scrollstart",function(){
+    alert("Started scrolling!");
   });
 
   if($(window).width() < 360){
