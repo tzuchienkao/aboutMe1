@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <!-- 最新編譯和最佳化的 JavaScript -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <!-- Include the jQuery Mobile library -->
-    <script src="https://code.jquery.com/mobile/git/jquery.mobile-git.min.js"></script>
+    
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
@@ -30,7 +31,13 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+<script>
+$(document).on("pagecreate","#pageone",function(){
+  $(document).on("scrollstart",function(){
+    alert("Started scrolling!");
+  });                       
+});
+</script>
   </head>
   <body>
     <div class="header navbar navbar-fixed-bottom">
