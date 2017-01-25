@@ -47,7 +47,7 @@ $(function() {
   //       $('.btn-block').hide();
   //     }
   // });
-  $(document).on("scrollstart",function(){
+  $(document).on("scrollstop",function(){
     alert("Started scrolling!");
   });
 
