@@ -48,7 +48,15 @@ $(function() {
   //     }
   // });
   $(document).on("scrollstop",function(){
-    alert("Started scrolling!");
+    $('.header').addClass('main');
+      $('.page-header').hide();
+      $('.btn-block').show();
+      var liH = $('#indexPage').height() / 25;
+      if($(document).scrollTop() <= liH){
+        $('.header').removeClass('main');
+        $('.page-header').show();
+        $('.btn-block').hide();
+      }
   });
 
   if($(window).width() < 360){
