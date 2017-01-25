@@ -48,15 +48,16 @@ $(function() {
   //     }
   // });
   $(document).on("scrollStart", function(){
-      $('.header').addClass('main');
-      $('.page-header').hide();
-      $('.btn-block').show();
-      var liH = $('#indexPage').height() / 25;
-      if($(document).scrollTop() <= liH){
-        $('.header').removeClass('main');
-        $('.page-header').show();
-        $('.btn-block').hide();
-      }
+      alert('123');
+      // $('.header').addClass('main');
+      // $('.page-header').hide();
+      // $('.btn-block').show();
+      // var liH = $('#indexPage').height() / 25;
+      // if($(document).scrollTop() <= liH){
+      //   $('.header').removeClass('main');
+      //   $('.page-header').show();
+      //   $('.btn-block').hide();
+      // }
   });
 
   if($(window).width() < 360){
