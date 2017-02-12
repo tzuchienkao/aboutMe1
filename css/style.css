@@ -19,8 +19,20 @@ a, a:hover, .page-header a:hover {color: #fff;}
 .artical.container dt a.active {color: #ba2227;}
 .work-main img, #aboutMe dd {padding-bottom: 1em;}
 .work-main {display: inline-block; padding-bottom: 5em;}
-.work-main>ul {margin-bottom:50px;}
+.work-main>ul:not(.timeline) {margin-bottom:50px;}
 .title {font-weight: bold;font-size: 1.2em;}
+/** timeline box structure **/
+.timeline {margin-left: 30px;padding: 20px 0 20px;position: relative;}
+.timeline:before {top: 0;bottom: 0;position: absolute;content: " ";width: 3px;background-color: #eee;}
+.tldate {display: inline-block;color: #aaa;padding: 3px 10px 0 0;}
+.tl-heading {margin: 0;color: #c25b4e;line-height: 2;}
+.timeline li {margin-bottom: 25px;position: relative;}
+.timeline li:before, .timeline li:after {content: " ";display: table;}
+.timeline li:after {clear: both;}
+.timeline li .timeline-panel {float: left;border: 1px solid #fff;background-color: #fff;padding: 10px 20px;margin-left:30px;position: relative;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);}
+.timeline li.timeline-inverted .timeline-panel:before {position: absolute;top: 25px;left: -16px;display: inline-block;border-top: 16px solid transparent;border-left: 0 solid #eee;border-right: 15px solid #eee;border-bottom: 15px solid transparent;content: " ";}
+.timeline li.timeline-inverted .timeline-panel:after {position: absolute;top: 27px;left: -14px;display: inline-block;border-top: 14px solid transparent;border-left: 0 solid #fff;border-right: 14px solid #fff;border-bottom: 14px solid transparent;content: " ";}
+.timeline li.timeline-inverted .tl-circ {position: absolute;top: 33px;text-align: center;background: #ba2227;width: 15px;height: 15px;line-height: 15px;margin-left: -8px;border-top-right-radius: 50%;border-top-left-radius: 50%;border-bottom-right-radius: 50%;border-bottom-left-radius: 50%;}
 @media only screen and (max-width: 800px) {
 	.header {min-height: auto;}
 	.header * {margin:0;}
