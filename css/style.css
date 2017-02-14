@@ -21,6 +21,7 @@ a, a:hover, .page-header a:hover {color: #fff;}
 .work-main {display: inline-block; padding-bottom: 5em;}
 .work-main>ul:not(.timeline) {margin-bottom:50px;}
 .title {font-weight: bold;font-size: 1.2em;}
+.highlight {color: #ba2227;}
 /** timeline box structure **/
 .timeline {margin-left: 30px;padding: 20px 0 20px;position: relative;}
 .timeline:before {top: 0;bottom: 0;position: absolute;content: " ";width: 3px;background-color: #eee;}
